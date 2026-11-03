@@ -8,13 +8,27 @@ Upload these files to the same folder in your GitHub repository:
 - portfolio-wireframe.png (site plan/wireframe reference)
 
 Rubric features included:
-- Flexbox navigation with wrapping
-- CSS Grid multi-column coursework section on projects.html
-- 1200px+: three columns
-- 768px-1199px: two columns
-- 767px and below: one column
-- Small-screen adjustments for 320px
-- Responsive sizing and box-sizing to reduce overflow
-- All three HTML files link to styles.css
+1. Styling:
+   - Linked CSS file applying planned color palette and Google Fonts pairing ('Space Grotesk' & 'Plus Jakarta Sans')
+   - Darker paragraph text color (#1E293B) for enhanced contrast and legibility
+   - At least 3 selector types used: Type (body, nav, footer), Class (.content-section, .card, .coursework-grid), ID (#main-header, #main-content)
+   - Consistent 8px spacing system
 
-After uploading, open the pages and test them using browser DevTools at 320px, 768px, and 1200px. Confirm no horizontal scrolling or overlapping elements.
+2. Layout:
+   - Flexbox used for responsive navigation list with wrapping
+   - CSS Grid multi-column coursework section on projects.html
+   - 1200px+: 3 columns
+   - 768px-1199px: 2 columns
+   - 767px and below: 1 column
+
+3. Responsiveness:
+   - Optimized for 320px (mobile), 768px (tablet), and 1200px (desktop)
+   - Multiple @media queries present
+   - Responsive sizing and box-sizing to prevent overflow
+
+4. Navigation & Deployment:
+   - Navigation links working seamlessly across all pages
+   - Ready for live deployment on GitHub Pages
+
+
+Accessibility revision: see ACCESSIBILITY_ISSUE_LOG.txt. Upload the three HTML files and styles.css together to GitHub Pages. Run WAVE on all three published pages before submitting.

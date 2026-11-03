@@ -1,0 +1,31 @@
+ACCESSIBILITY ISSUE LOG
+
+This report records source-code findings. The live WAVE checker has not been run on the published website in this session. Fill in the exact WAVE result after scanning each published page. Do not claim WAVE passed until the scan confirms the result.
+
+1. Navigation contrast
+Element affected: Active, hover, and keyboard-focus navigation links.
+Source finding: White text appeared over the original teal background (#168C8C), a contrast concern for normal-size text.
+WAVE reported: Confirm exact error/alert name and contrast ratio in WAVE.
+User impact: Visitors with low vision or color-vision differences may struggle to read navigation labels.
+Fix applied: Changed the active, hover, and focus background to darker teal (#075B5B), retaining white text.
+
+2. Missing skip-navigation link
+Element affected: Navigation and main content on all three pages.
+Source finding: No skip link appeared before the navigation.
+WAVE reported: Confirm exact WAVE result. A missing skip link is a usability concern and might not appear as an automated WAVE error.
+User impact: Keyboard users must tab through repeated navigation links before reaching the main content.
+Fix applied: Added a “Skip to main content” link and made the main landmark focusable with tabindex="-1".
+
+3. Keyboard focus and current-page state
+Element affected: Navigation links and main content.
+Source finding: The original main landmark was not focusable, and the active page was indicated visually only.
+WAVE reported: Confirm whether WAVE lists related alerts. Test keyboard focus manually as well.
+User impact: Keyboard users need a visible focus indicator. Screen-reader users benefit from a programmatic current-page indicator.
+Fix applied: Added a stronger focus outline and aria-current="page" to the active navigation link.
+
+FINAL VERIFICATION
+[ ] Publish index.html, projects.html, about.html, and styles.css together.
+[ ] Run WAVE on all three published pages and record exact findings above.
+[ ] Correct any remaining WAVE errors and rescan.
+[ ] Test keyboard navigation using Tab, Shift+Tab, and Enter.
+[ ] Check widths of 320px, 768px, and 1200px.
